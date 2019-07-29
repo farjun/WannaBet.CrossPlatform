@@ -1,5 +1,4 @@
 import axios from 'axios';
-
 const SERVER_URL = "www.google.com";
 
 const coordinatesParser = (data) => {

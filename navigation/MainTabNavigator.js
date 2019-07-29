@@ -14,17 +14,16 @@ const HomeStack = createStackNavigator({
 HomeStack.navigationOptions = {
     tabBarLabel: 'Home',
     tabBarIcon: ({focused}) => (
-        < TabBarIcon
-    focused = {focused}
-    name = {
+        <TabBarIcon
+            focused={focused}
+            name={
         Platform.OS === 'ios'
             ? `ios-information-circle${focused ? '' : '-outline'}`
             : 'md-information-circle'
-    }
-/>
-),
-}
-;
+            }
+        />
+    ),
+};
 
 const MapStack = createStackNavigator({
     MapScreen: ReduxComponents.MapScreenWrapper,
@@ -33,13 +32,12 @@ const MapStack = createStackNavigator({
 MapStack.navigationOptions = {
     tabBarLabel: 'Map',
     tabBarIcon: ({focused}) => (
-        < TabBarIcon
-    focused = {focused}
-    name = {Platform.OS === 'ios' ? 'ios-link' : 'md-link'}
-/>
-),
-}
-;
+        <TabBarIcon
+            focused={focused}
+            name={Platform.OS === 'ios' ? 'ios-link' : 'md-link'}
+        />
+    ),
+};
 
 const SettingsStack = createStackNavigator({
     Settings: SettingsScreen,
@@ -48,13 +46,12 @@ const SettingsStack = createStackNavigator({
 SettingsStack.navigationOptions = {
     tabBarLabel: 'Settings',
     tabBarIcon: ({focused}) => (
-        < TabBarIcon
-    focused = {focused}
-    name = {Platform.OS === 'ios' ? 'ios-options' : 'md-options'}
-/>
-),
-}
-;
+        <TabBarIcon
+            focused={focused}
+            name={Platform.OS === 'ios' ? 'ios-options' : 'md-options'}
+        />
+    ),
+};
 
 export default createBottomTabNavigator({
     HomeStack,

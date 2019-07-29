@@ -4,15 +4,12 @@ import {StyleSheet, View, Image} from 'react-native';
 export class PlaceScreen extends React.Component {
     render() {
         return (
-            < View >
-            < Image
-        source = {require('../assets/images/french-embassy.jpg'
-    )
-    }
-        />
-        < /View>
-    )
-        ;
+            <View>
+                <Image
+                    source={require('../assets/images/french-embassy.jpg')}
+                />
+            </View>
+        );
     }
 }
 
