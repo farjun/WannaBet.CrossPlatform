@@ -4,9 +4,4 @@ class feedCard {
         this.text = props.text;
         this.options = props.options;
     }
-
-    getPhotoUri() {
-        return this.photoUri;
-    }
-
 }

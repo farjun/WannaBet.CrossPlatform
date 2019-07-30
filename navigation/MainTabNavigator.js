@@ -26,7 +26,7 @@ HomeStack.navigationOptions = {
 };
 
 const MapStack = createStackNavigator({
-    MapScreen: ReduxComponents.MapScreenWrapper,
+    MapScreen: ReduxComponents.FeedScreenWrapper,
 });
 
 MapStack.navigationOptions = {

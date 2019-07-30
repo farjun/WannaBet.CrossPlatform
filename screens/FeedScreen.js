@@ -1,24 +1,17 @@
 import React from 'react';
-import MapView, {Marker} from 'react-native-maps';
-import * as Actions from '../actions/actions';
-import {NavigationEvents} from 'react-navigation';
 import {View, StyleSheet, Image} from 'react-native';
 import {Constants} from 'expo';
+import * as ReduxComponents from "../components/ReduxComponents"
 
-export class MapScreen extends React.Component {
-    static navigationOptions = {
-        title: 'Map',
-    };
+export class FeedScreen extends React.Component {
+    constructor(props) {
+        super(props);
+        this.props = props;
+    }
 
     render() {
         return (
-            <View style={styles.container}>
-                <Image
-                    style={styles.image}
-                    source={{uri: "https://s-media-cache-ak0.pinimg.com/736x/43/cd/6e/43cd6e82491bf130d97624c198ee1a3f--funny-movie-quotes-funny-movies.jpg"}}
-                    resizeMode="cover"
-                />
-            </View>
+            <ReduxComponents.FeedPostBoxWrapper/>
         );
     }
 }
